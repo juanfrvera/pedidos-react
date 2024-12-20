@@ -15,3 +15,23 @@
 .title {
   font-size: 32px;
 }
+
+.body {
+  padding-top: 32px;
+}
+
+.groups {
+  display: flex;
+  gap: 64px;
+}
+
+.group {
+  padding: 16px;
+  border: 1px solid;
+}
+
+.groupView {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
