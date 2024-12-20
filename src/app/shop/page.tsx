@@ -1,6 +1,6 @@
 import { getTable } from "@/util/supabase-client";
 
-export default async function Test({
+export default async function Shop({
   params,
 }: {
   params: Promise<{ slug: string }>;
