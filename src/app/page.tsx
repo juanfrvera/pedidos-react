@@ -18,13 +18,13 @@ export default function Home() {
           // Pick a group
           <div className={styles.groups}>
             {itemGroups.map((g) => (
-              <div key={g.label} onClick={(e) => setCurrentGroup(g)} className={styles.group}>{g.label}</div>
+              <div key={g.label} onClick={() => setCurrentGroup(g)} className={styles.group}>{g.label}</div>
             ))}
           </div>
           :
           // Group selected
           <div className={styles.groupView}>
-            <button className={'button ' + styles.groupGoBack} onClick={(e) => setCurrentGroup(undefined)}>Go back</button>
+            <button className={'button ' + styles.groupGoBack} onClick={() => setCurrentGroup(undefined)}>Go back</button>
             <Items items={group.items || []} />
           </div>
         }

@@ -5,10 +5,16 @@ import style from './menu.module.scss'
 export default function Menu({ items }: { items: MenuItem[] }) {
     const [open, setOpen] = useState(false)
     return <div className={style.menu}>
-        <button className={style.hamburguer}>Menu</button>
-        {items.map((item) => (
-            <div key={item.id} className={style.menuItem}>{item.label}</div>
-        ))}
+        <button onClick={() => setOpen(!open)} className={style.hamburguer}>Menu</button>
+        {open &&
+            <div className={style.menuItems}>
+                {
+                    items.map((item) => (
+                        <div key={item.id} className={style.menuItem}>{item.label}</div>
+                    ))
+                }
+            </div>
+        }
     </div>
 }
 
