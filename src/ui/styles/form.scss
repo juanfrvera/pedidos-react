@@ -1,0 +1,16 @@
+.form-body {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.form-row {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-input {
+    padding: 4px;
+}

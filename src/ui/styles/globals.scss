@@ -1,1 +1,10 @@
-/** This is the global styles file */
+@import 'color.scss';
+@import 'modal.scss';
+@import 'form.scss';
+@import 'button.scss';
+
+.link {
+    &_current {
+        font-weight: bold;
+    }
+}
