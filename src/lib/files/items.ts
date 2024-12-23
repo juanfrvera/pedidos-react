@@ -1,5 +1,5 @@
-import { Item } from "@/types/item";
-import { ItemGroup } from "@/types/item-group";
+import { Item } from "@/lib/types/item";
+import { ItemGroup } from "@/lib/types/item-group";
 
 const items: { [key: string]: Item } = {
     pizzaCalabresa: {

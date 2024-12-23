@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react';
 import style from './menu.module.scss'
+import Link from 'next/link';
 
 export default function Menu({ items }: { items: MenuItem[] }) {
     const [open, setOpen] = useState(false)
@@ -10,7 +11,9 @@ export default function Menu({ items }: { items: MenuItem[] }) {
             <div className={style.menuItems}>
                 {
                     items.map((item) => (
-                        <div key={item.id} className={style.menuItem}>{item.label}</div>
+                        <div key={item.href} className={style.menuItem}>
+                            <Link href={item.href}>{item.label}</Link>
+                        </div>
                     ))
                 }
             </div>
@@ -20,5 +23,5 @@ export default function Menu({ items }: { items: MenuItem[] }) {
 
 export interface MenuItem {
     label: string;
-    id: string;
+    href: string;
 }

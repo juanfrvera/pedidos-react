@@ -1,9 +1,9 @@
 "use client"
-import { itemGroups } from "@/assets/files/items";
+import { itemGroups } from "@/lib/files/items";
 import styles from "./page.module.scss";
 import { useState } from "react";
-import { ItemGroup } from "@/types/item-group";
-import Items from "@/components/items/items";
+import { ItemGroup } from "@/lib/types/item-group";
+import Items from "@/ui/components/items/items";
 
 export default function Home() {
   const [group, setCurrentGroup] = useState<ItemGroup>();

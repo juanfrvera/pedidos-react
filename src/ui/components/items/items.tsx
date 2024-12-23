@@ -1,4 +1,4 @@
-import { Item } from "@/types/item";
+import { Item } from "@/lib/types/item";
 import styles from "./items.module.scss";
 
 export default function Items({ items }: { items: Item[] }) {
