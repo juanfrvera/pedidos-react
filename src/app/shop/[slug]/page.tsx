@@ -6,6 +6,7 @@ import { itemGroups } from "@/lib/files/items";
 import Items from "@/ui/components/items/items";
 import { useParams } from "next/navigation";
 
+// Make the shop a Server page and fetch the shop based on the slug
 export default function Shop() {
   const [group, setCurrentGroup] = useState<ItemGroup>();
   const [ui, setUi] = useState<UI | undefined>(undefined);

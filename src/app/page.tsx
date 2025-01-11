@@ -2,5 +2,5 @@
 import styles from "./page.module.scss";
 
 export default function Home() {
-  return <div>Welcome</div>;
+  return <div>Welcome what do you want to order today?</div>;
 }
