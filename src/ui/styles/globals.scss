@@ -8,3 +8,14 @@
     font-weight: bold;
   }
 }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+.body {
+  margin: auto;
+  max-width: 800px;
+}
